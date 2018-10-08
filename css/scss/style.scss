@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+/*!----------------------------- 
+ * nykim@nomadconnection.com
+ * 2017-11-27
+ * Compiled by Compass
+-------------------------------- */
+
+// 기본 스타일
+@import "com/reset";
+@import "com/common";
+@import "com/font";
+
+// 레이아웃
+@import "main/page_recharge"; //충전 안내
+@import "main/page_notice"; //공지사항
+@import "main/page_support"; //고객센터
+@import "main/page_about"; //자판기 안내
+@import "main/page_terms"; //약관문

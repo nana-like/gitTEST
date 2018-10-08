@@ -1,0 +1,83 @@
+@charset "utf-8";
+
+/*!  
+ *   PAGE - Notice
+ */
+ 
+ .page_notice .notice {
+
+     .notice_list {
+         position: relative;
+         width: 90%;
+         margin: 0 auto -1px;
+         font-size: 1.3rem;
+         text-align: left;
+         background-color: #fafafa;
+
+         input[type="radio"] {
+             position: absolute;
+             opacity: 0;
+             z-index: -1;
+         }
+         
+         label {
+            display: block;
+            position: relative;
+            padding: 0.3rem 1.5rem 0.3rem 1.5rem;
+            line-height: 3;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            cursor: pointer;
+            border-top: 1px solid #e6e6e6;
+            border-bottom: 1px solid #e6e6e6;
+            transition: background-color .3s;
+            
+         }
+         
+         
+         .noti_content {
+              max-height: 0;
+              padding: 0 1.5rem;
+              overflow: hidden;
+              transition: background-color .3s, max-height .6s cubic-bezier(.42, 0, 0, .88);
+             
+             .date {
+                 display: block;
+                 padding: 3rem 0 2rem 0;
+                 font-size: 1.1rem;
+                 letter-spacing: -0.02rem;
+                 color: #bfbfbf;
+                 text-align: right;
+             }
+             
+             .text {
+                 padding-top: 2rem;
+                 
+                 p {
+                     display: block;
+                     margin: 0.8rem 0;
+                 }
+             }
+         }
+         
+         input[type="radio"]:checked+label {
+            font-weight: bold;
+            //color: #0399ff;
+            border-top: 1px solid #d0d0d0;
+            border-bottom: 1px solid #d0d0d0;
+            background-color: #f2f2f2;
+            transition: background-color .3s;
+         }
+         
+        input[type="radio"]:checked ~ .noti_content {
+            max-height: 1200px;
+            background-color: #f2f2f2;
+            transition: background-color .3s, max-height .6s cubic-bezier(.42, 0, 0, .88);
+        }
+         
+     } //end of .notice_list
+     
+ }  //end of .page_notice .notice
+
+ 

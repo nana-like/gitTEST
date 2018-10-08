@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+/*!  
+ *   PAGE - Recharge
+ */
+ 
+ 
+
+.page_recharge {
+
+    .guide {
+        margin: 3rem 0 3rem 0;
+
+        .guide_list {
+            width: 90%;
+            max-width: 540px;
+            margin: 0 auto;
+            padding: 1rem 2rem;
+            font-size: 1.2rem;
+            border-bottom: 1px solid #e6e6e6;
+
+
+            &:after {
+                display: block;
+                content: '';
+                clear: both;
+            }
+            
+            &:last-child {
+                border-bottom: 0;
+            }
+            
+            &:nth-child(1) .icon {
+                background-image: url(../images/ico_guide_1.svg);
+                background-size: 45%;
+            }
+            &:nth-child(2) .icon {
+                background-image: url(../images/ico_guide_2.svg);
+                background-size: 60%;
+            }
+            &:nth-child(3) .icon {
+                background-image: url(../images/ico_guide_3.svg);
+                background-size: 50%;
+            }
+            &:nth-child(4) .icon {
+                background-image: url(../images/ico_guide_4.svg);
+                background-size: 48%;
+            }
+            &:nth-child(5) .icon {
+                background-image: url(../images/ico_guide_5.svg);
+                background-size: 45%;
+            }
+
+            .icon {
+                float: left;
+                width: 22%;
+                height: 5rem;
+                margin-right: 3%;
+                background-color: #f0f0f0;
+                background-repeat: no-repeat;
+                background-position: 50% 50%;
+            }
+
+            .num {
+                float: left;
+                width: 5%;
+                margin: 0.3rem 1.5% 0 0;
+            }
+
+            .desc {
+                float: right;
+                width: 68.5%;
+                margin-top: 0.3rem;
+                color: #646464;
+                text-align: left;
+                word-break: keep-all;
+            }
+
+        } //end of .guide_list
+        
+    } //end of .guide
+
+    .contact_desc {
+        margin-bottom: 0.3rem;
+    }
+    .contact_link {
+        color: #0399ff;
+        letter-spacing: 0.05rem;
+    }
+
+} //end of .page_charge

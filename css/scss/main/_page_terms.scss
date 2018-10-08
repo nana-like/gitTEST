@@ -1,0 +1,34 @@
+@charset "utf-8";
+
+/*!  
+ *   PAGE - Terms
+ */
+
+.page_terms {
+    width: 90%;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: #515151;
+    
+    h2 {
+        font-size: 1.4rem;
+        margin: 3rem 0 2rem;
+        color: #0399ff;
+        text-align: left;
+        font-weight: bold;
+    }
+    h2+p {
+        margin-bottom: 0.8rem;
+    }
+    strong, p {
+        display: block;
+        text-align: left;
+    }
+    strong {
+        margin: 0.8rem 0 0.3rem;
+        font-weight: bold;
+        span {
+            font-weight: normal;
+        }
+    }
+}
